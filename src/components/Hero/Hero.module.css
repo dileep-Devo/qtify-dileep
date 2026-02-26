@@ -1,0 +1,16 @@
+.hero {
+  background-color: #121212;
+  color: #ffffff;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+
+  font:
+    400 16px/1 "Poppins",
+    sans-serif;
+  letter-spacing: 0;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+.button {
+  height: 47px;
+  width: 174px;
+  background: #121212;
+  color: #34c94b;
+  border: 1px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  font:
+    600 18px/1 "Poppins",
+    sans-serif;
+  letter-spacing: 0.25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
