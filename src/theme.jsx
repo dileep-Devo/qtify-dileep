@@ -2,7 +2,7 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   typography: {
-    fontFamily: "poppins",
+    fontFamily: "Poppins",
     subtitle1: { fontWeight: 600 },
     body1: { fontWeight: 400 },
     button: { textTransform: "none" },
@@ -11,8 +11,8 @@ const theme = createTheme({
     primary: {
       light: "",
       main: "#34C94B",
-      dark: "",
-      contrastText: "#ffff",
+      dark: "#121212",
+      contrastText: "#ffffff",
     },
   },
 

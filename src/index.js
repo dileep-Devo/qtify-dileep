@@ -2,11 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { ThemeProvider } from "@mui/system";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 import theme from "./theme";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/HomePage/HomePage";
 import AlbumPage from "./pages/AlbumPage";
+import "@fontsource/poppins";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 let router = createBrowserRouter([
@@ -32,6 +35,7 @@ let router = createBrowserRouter([
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <RouterProvider router={router} />
     </ThemeProvider>
   </React.StrictMode>,
