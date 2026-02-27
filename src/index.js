@@ -11,7 +11,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 let router = createBrowserRouter([
   {
-    path: "/",
     Component: App,
     children: [
       {
@@ -20,7 +19,7 @@ let router = createBrowserRouter([
       },
       {
         path: "home",
-        Component: AlbumPage,
+        Component: HomePage,
       },
       {
         path: "/album/:albumId",
@@ -31,9 +30,11 @@ let router = createBrowserRouter([
 ]);
 
 root.render(
-  <ThemeProvider theme={theme}>
-    <RouterProvider router={router} />
-  </ThemeProvider>,
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  </React.StrictMode>,
 );
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

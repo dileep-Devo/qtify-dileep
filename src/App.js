@@ -1,12 +1,15 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
 import { Outlet } from "react-router";
-import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <div>
+      <Navbar />
+      {/* <div>
+        <Link to="/">Home</Link> | {""}
+        <Link to={`/album/1`}>Album</Link>
+      </div> */}
       <Outlet />
     </div>
   );
